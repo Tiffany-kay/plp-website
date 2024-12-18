@@ -1,0 +1,113 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000; /* Black background */
+    color: #FFA500; /* Orange text */
+}
+
+header {
+    background-color: #333; /* Dark grey background */
+    color: #FFA500; /* Orange text */
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #FFA500; /* Orange text */
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333; /* Dark grey background */
+    color: #FFA500; /* Orange text */
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+/* Contact Form Styling */ 
+#contact-form { 
+    margin: 2rem 0; 
+} 
+.form-group { 
+    margin-bottom: 1rem; 
+} 
+label { 
+    display: block; 
+    margin-bottom: 0.5rem; 
+    color: #FFA500; /* Orange text */ 
+} 
+
+input, textarea { 
+    width: 50%; 
+    padding: 0.5rem; 
+    margin-bottom: 0.5rem; 
+    border: 1px solid #FFA500; /* Orange border */ 
+    border-radius: 4px; 
+    background-color: #333; /* Dark grey background */ 
+    color: #FFA500; /* Orange text */ 
+} 
+button { 
+    background-color: #FFA500; /* Orange background */ 
+    color: #000; /* Black text */ 
+    padding: 0.75rem 1.5rem; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+} 
+button:hover { 
+    background-color: #FF4500; /* Darker orange */ 
+}
+
+/* Media Gallery Styling */
+.media-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.media-item {
+    flex: 1 1 calc(25% - 1rem); /* Adjusts item width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-item img, .media-item video {
+    width: 100%;
+    max-width: 300px; /* Fixed width for images and videos */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+.media-item p {
+    margin-top: 0.5rem;
+    color: #FFA500; /* Orange text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+    
+    .media-item {
+        flex: 1 1 calc(50% - 1rem); /* Adjusts item width for smaller screens */
+    }
+}
